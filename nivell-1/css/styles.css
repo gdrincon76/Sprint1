@@ -1,58 +1,93 @@
+body{
+    max-width: 1200px;
+}
 .container {
     background-color: black;
     padding: 10px;
     margin: 10px;
 }
 
-.container1 {
-    background-color: purple;
-    display: flex;
+/* HEADER*/
 
-}
-
-.container2 {
-    background-color: green;
+.container-header-top {
+    background-color: darkslateblue;
     display: flex;
 }
 
-.container3 {
-    background-color: red;
-    display: flex;
-}
-
-.container4 {
-    background-color: blue;
-}
-
-.container5 {
-    background-color: yellow;
-    display: flex;
-}
-
-.container6 {
-    background-color: black;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-}
-
-.item {
-    background-color: ghostwhite;
-    margin: 10px;
-}
-
-.item-footer {
-    background-color: greenyellow;
+.container-header-bottom{
+    background-color: indianred;  
+    margin-top: 10px;
+    padding: 5px;
 }
 
 .item-header-top {
     background-color: orange;
     margin: 10px;
-    width: 33%;
+    padding: 5px;      
 }
 
-.item-header-bottom{
-    background-color: indianred;
-    margin: 10px;
-    width: 100%;
+#item-header-start-end {
+    width: 15%;
+}
+
+#item-header-middle {
+    width: 70%;
+}
+
+.item-header-bottom {
+    background-color: darkslategrey;
+    margin: 5px;
+    padding: 5px;      
+}
+
+/*MAIN*/
+
+#container-main-flex {
+    display: flex;
+
+}
+
+.container-main-start {
+    background-color: darkcyan;  
+    width: 70%;
+    margin-right: 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.container-main-end {
+    background-color: yellowgreen;  
+    width: 30%;
+    justify-content: start;
+    
+}
+
+.item-main-start {
+    background-color: lightsalmon;
+    width: 50%;  
+    padding: 5px;
+    margin: 5px;
+    
+}
+
+.item-main-start-bottom {
+    background-color: lightcoral;
+    width: 100%;  
+    padding: 5px;
+    margin: 5px;
+    
+}
+
+.item-main-aside {
+    background-color: rebeccapurple;  
+    padding: 5px;
+    margin: 5px;
+    
+}
+
+.item-footer {
+    background-color: lightseagreen;
+    padding: 5px;
 }
