@@ -1,204 +1,100 @@
 * {
-    margin: 0;
-    padding: 0;
-    max-width: 1200px;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+}
+
+.logo {
+  transform: scale(0.5);
+  width: 15%;
+}
+
+.social-icons {
+  height: 20px;
+}
+
+.menu-icons {
+  height: 20px;
+  margin-right: 5px;
 }
 
 .container {
-    background-color: burlywood;
-    padding: 10px;
+  padding: 0 25px;
 }
 
-.inside-container {
-    background-color: black;
-    padding: 10px;
-    margin: 10px;
+.header-container {
+  background-image: url("../../images/header.jpg");
+  background-size: cover;
+  background-position: 20% 35%;
 }
 
-/* HEADER*/
-
-.container-header-top {
-    background-color: darkslateblue;
-    display: flex;
-    justify-content: space-evenly;
-    height: 100px;
+.navbar {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.container-header-bottom{
-    background-color: indianred;
-    margin-top: 10px;
-    padding: 5px;
+.menu {
+  list-style: none;
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.item-header-top-start {
-    background-color: orange;
-    margin: 10px;
-    padding: 5px;
+.menu a {
+  color: grey;
+  text-decoration: none;
 }
 
-.item-header-middle{
-    background-color: orange;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    list-style: none;
+.navbar-end {
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  width: 15%;
+}
 
+.header-bottom-text {
+  margin: 100px;
+  height: 100px;
+  background-color: grey;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  color: red;
+}
+
+a:hover {
+  transform: scale(1.2);
 }
 
 li {
-    margin: 25px;
-}
-
-a {
-    text-decoration: none;
-    color: gray;
-    display: flex;
-}
-
-a > img {
-    height: 20px;
-    padding-right: 5px;
-}
-
-.item-header-top-end {
-    background-color: orange;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-}
-.icons-color {
-    fill: grey;
-}
-
-.item-header-bottom {
-    background-color: darkslategrey;
-    margin: 5px;
-    padding: 5px;
-}
-
-/*MAIN*/
-
-#container-main-flex {
-    display: flex;
-
-}
-
-.grid-container-main-start {
-    background-color: darkcyan;
-    width: 70%;
-    margin-right: 10px;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: auto auto;
-
-}
-
-.container-main-end {
-    background-color: yellowgreen;
-    width: 30%;
-    justify-content: start;
-
-}
-
-.item-main-start {
-    background-color: lightsalmon;
-    padding: 5px;
-    margin: 5px;
-
-}
-
-.item-main-start-bottom {
-    background-color: lightcoral;
-    padding: 5px;
-    margin: 5px;
-    grid-column: 1 / 3;
-
-}
-
-.item-main-aside {
-    background-color: rebeccapurple;
-    padding: 5px;
-    margin: 5px;
-
-}
-
-.item-footer {
-    background-color: lightseagreen;
-    padding: 5px;
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    #container-main-flex {
-        flex-direction: column;
-        background-color: yellow;
-    }
-
-
-    .grid-container-main-start {
-        background-color: darkcyan;
-        width: auto;
-        margin-right: 0px;
-        margin-bottom: 10px;
-        display: grid;
-        grid-template-columns: auto auto;
-
-    }
-
-    .container-main-end {
-        background-color: yellowgreen;
-        justify-content: start;
-        width: auto;
-
-    }
-
-    .container {
-        background-color: burlywood;
-        width: auto;
-        padding: 10px;
-    }
-
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
-    .container-header-top {
-        background-color: darkslateblue;
-        display: flex;
-        flex-direction: column;
-        width: auto;
-    }
+@media (max-width: 767px) {
+  .navbar {
+    align-items: center;
+    flex-direction: column;
+  }
 
-    .item-header-top-start {
-        background-color: orange;
-        margin: 10px;
-        padding: 5px;
-        width: auto;
-    }
+  .menu {
+    margin-bottom: 25px;
+  }
 
-    .item-header-top-end  {
-        background-color: orange;
-        margin: 10px;
-        padding: 5px;
-        width: auto;
-    }
+  .header-bottom-text h2 {
+    transform: scale(0.7);
+  }
 
-    #container-main-flex {
-        flex-direction: column;
-        background-color: yellow;
-    }
-
-    .grid-container-main-start {
-        background-color: darkcyan;
-        width: auto;
-        margin-right: 0px;
-        margin-bottom: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .container-main-end {
-        background-color: yellowgreen;
-        justify-content: start;
-        width: auto;
-    }
-
+  .header-container {
+    background-position: center;
+  }
 }

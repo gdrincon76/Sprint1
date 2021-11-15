@@ -1,177 +1,166 @@
 * {
-    margin: 0;
-    padding: 0;
-    max-width: 1200px;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
 }
 
 .container {
-    background-color: burlywood;
-    padding: 10px;
+  background-color: burlywood;
+  padding: 10px;
 }
 
 .inside-container {
-    background-color: black;
-    padding: 10px;
-    margin: 10px;
+  background-color: black;
+  padding: 10px;
+  margin: 10px;
 }
 
 /* HEADER*/
 
 .container-header-top {
-    background-color: darkslateblue;
-    display: flex;
-    justify-content: space-evenly;
+  background-color: darkslateblue;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.container-header-bottom{
-    background-color: indianred;
-    margin-top: 10px;
-    padding: 5px;
+.container-header-bottom {
+  background-color: indianred;
+  margin-top: 10px;
+  padding: 5px;
 }
 
 .item-header-top {
-    background-color: orange;
-    margin: 10px;
-    padding: 5px;
-    width: 15%;
+  background-color: orange;
+  margin: 10px;
+  padding: 5px;
+  width: 15%;
 }
 
 #item-header-middle {
-    background-color: orange;
-    margin: 10px;
-    padding: 5px;
-    width: 70%;
+  background-color: orange;
+  margin: 10px;
+  padding: 5px;
+  width: 70%;
 }
 
 .item-header-bottom {
-    background-color: darkslategrey;
-    margin: 5px;
-    padding: 5px;
+  background-color: darkslategrey;
+  margin: 5px;
+  padding: 5px;
 }
 
 /*MAIN*/
 
 #container-main-flex {
-    display: flex;
-
+  display: flex;
 }
 
 .grid-container-main-start {
-    background-color: darkcyan;
-    width: 70%;
-    margin-right: 10px;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: auto auto;
-
+  background-color: darkcyan;
+  width: 70%;
+  margin-right: 10px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .container-main-end {
-    background-color: yellowgreen;
-    width: 30%;
-    justify-content: start;
-
+  background-color: yellowgreen;
+  width: 30%;
+  justify-content: start;
 }
 
 .item-main-start {
-    background-color: lightsalmon;
-    padding: 5px;
-    margin: 5px;
-
+  background-color: lightsalmon;
+  padding: 5px;
+  margin: 5px;
 }
 
 .item-main-start-bottom {
-    background-color: lightcoral;
-    padding: 5px;
-    margin: 5px;
-    grid-column: 1 / 3;
-
+  background-color: lightcoral;
+  padding: 5px;
+  margin: 5px;
+  grid-column: 1 / 3;
 }
 
 .item-main-aside {
-    background-color: rebeccapurple;
-    padding: 5px;
-    margin: 5px;
-
+  background-color: rebeccapurple;
+  padding: 5px;
+  margin: 5px;
 }
 
 .item-footer {
-    background-color: lightseagreen;
-    padding: 5px;
+  background-color: lightseagreen;
+  padding: 5px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    #container-main-flex {
-        flex-direction: column;
-        background-color: yellow;
-    }
+  #container-main-flex {
+    flex-direction: column;
+    background-color: yellow;
+  }
 
+  .grid-container-main-start {
+    background-color: darkcyan;
+    width: auto;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 
-    .grid-container-main-start {
-        background-color: darkcyan;
-        width: auto;
-        margin-right: 0px;
-        margin-bottom: 10px;
-        display: grid;
-        grid-template-columns: auto auto;
+  .container-main-end {
+    background-color: yellowgreen;
+    justify-content: start;
+    width: auto;
+  }
 
-    }
-
-    .container-main-end {
-        background-color: yellowgreen;
-        justify-content: start;
-        width: auto;
-
-    }
-
-    .container {
-        background-color: burlywood;
-        width: auto;
-        padding: 10px;
-    }
-
+  .container {
+    background-color: burlywood;
+    width: auto;
+    padding: 10px;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-    .container-header-top {
-        background-color: darkslateblue;
-        display: flex;
-        flex-direction: column;
-        width: auto;
-    }
+  .container-header-top {
+    background-color: darkslateblue;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
 
-    .item-header-top {
-        background-color: orange;
-        margin: 10px;
-        padding: 5px;
-        width: auto;
-    }
+  .item-header-top {
+    background-color: orange;
+    margin: 10px;
+    padding: 5px;
+    width: auto;
+  }
 
-    #item-header-middle {
-        background-color: orange;
-        margin: 10px;
-        padding: 5px;
-        width: auto;
-    }
+  #item-header-middle {
+    background-color: orange;
+    margin: 10px;
+    padding: 5px;
+    width: auto;
+  }
 
-    #container-main-flex {
-        flex-direction: column;
-        background-color: yellow;
-    }
+  #container-main-flex {
+    flex-direction: column;
+    background-color: yellow;
+  }
 
-    .grid-container-main-start {
-        background-color: darkcyan;
-        width: auto;
-        margin-right: 0px;
-        margin-bottom: 10px;
-        display: flex;
-        flex-direction: column;
-    }
+  .grid-container-main-start {
+    background-color: darkcyan;
+    width: auto;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .container-main-end {
-        background-color: yellowgreen;
-        justify-content: start;
-        width: auto;
-    }
-
+  .container-main-end {
+    background-color: yellowgreen;
+    justify-content: start;
+    width: auto;
+  }
 }
