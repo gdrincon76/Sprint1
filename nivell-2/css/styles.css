@@ -25,7 +25,7 @@
 .header-container {
   background-image: url("../../images/header.jpg");
   background-size: cover;
-  background-position: 20% 35%;
+  background-position: 0% 35%;
 }
 
 .navbar {
@@ -64,7 +64,7 @@
   justify-content: center;
 }
 
-h2 {
+q {
   color: red;
 }
 
@@ -75,6 +75,77 @@ a:hover {
 li {
   display: flex;
   align-items: center;
+}
+
+/* MAIN BLOCK */
+
+.main-container {
+  display: flex;
+  margin-top: -85px;
+}
+
+.group-articles {
+  width: 80%;
+  padding: 10px;
+  background: lightgray;
+}
+
+figure {
+  position: relative;
+  overflow: hidden;
+
+}
+
+figcaption{
+  color: yellow;
+  position: absolute;
+  bottom: 0;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.article{
+  padding: 10px;
+  background: whitesmoke;
+}
+
+.aside-container {
+  width: 20%;
+  padding: 20px;
+  margin-left: 10px;
+  background: lightgray;
+}
+h3 {
+  text-align: center;
+}
+
+.paragraph {
+  text-align: center;
+
+}
+
+.column-paragraph {
+  color: grey;
+  padding: 10px;
+  column-count: 2;
+}
+
+.article img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.article h2 {
+  background: lightcoral;
+  color: white;
+  padding: 10px 0px 0px 5px;
+  font-family: sans-serif;
+}
+
+.article a {
+  color: grey;
+  text-decoration: none;
+  padding-left: 10px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -88,6 +159,11 @@ li {
 
   .menu {
     margin-bottom: 25px;
+    flex-direction: column;
+  }
+
+  li {
+    margin: 5px;
   }
 
   .header-bottom-text h2 {
