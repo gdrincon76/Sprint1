@@ -239,3 +239,18 @@ footer p {
   }
 }
 
+#left-article-in {
+  animation: left-article 2s ease;
+
+}
+
+@keyframes left-article {
+  0%{
+    opacity: 0;
+    transform: translatex(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
